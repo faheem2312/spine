@@ -10,7 +10,6 @@ export default async function DashboardLayout({
 }: {
   children: React.ReactNode;
 }) {
-    
   const userId = await getCurrentUserId();
 
   if (!userId) {
@@ -25,21 +24,21 @@ export default async function DashboardLayout({
   }
 
   return (
-    <div className="min-h-screen bg-stone-50">
-      <header className="border-b border-stone-200 bg-white">
+    <div className="min-h-screen bg-stone-950">
+      <header className="border-b border-stone-800 bg-stone-900">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/dashboard" className="text-lg font-semibold text-stone-900">
+          <Link href="/dashboard" className="text-lg font-semibold text-stone-50">
             Spine
           </Link>
           <nav className="flex items-center gap-6 text-sm">
-            <Link href="/dashboard" className="text-stone-600 hover:text-stone-900">
+            <Link href="/dashboard" className="text-stone-400 hover:text-stone-50">
               Dashboard
             </Link>
-            <Link href="/books" className="text-stone-600 hover:text-stone-900">
+            <Link href="/books" className="text-stone-400 hover:text-stone-50">
               My Books
             </Link>
-            <span className="text-stone-400">|</span>
-            <span className="text-stone-600">Hi, {user.name.split(" ")[0]}</span>
+            <span className="text-stone-700">|</span>
+            <span className="text-stone-400">Hi, {user.name.split(" ")[0]}</span>
             <LogoutButton />
           </nav>
         </div>

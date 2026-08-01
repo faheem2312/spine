@@ -1,4 +1,11 @@
 import mongoose from "mongoose";
+import dns from "dns";
+
+// Node's built-in DNS resolver (c-ares) sometimes can't reach certain
+// corporate/campus network DNS servers for SRV lookups, even though
+// the OS resolver (nslookup) works fine. Forcing a public DNS server
+// fixes "querySrv ECONNREFUSED" errors in that situation.
+dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 const MONGODB_URI = process.env.MONGODB_URI as string;
 

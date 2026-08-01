@@ -41,27 +41,27 @@ export default function SignupPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-stone-50 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-stone-950 px-4">
       <div className="w-full max-w-sm">
         <div className="mb-8 text-center">
-          <h1 className="text-2xl font-semibold text-stone-900">Spine</h1>
-          <p className="mt-1 text-sm text-stone-500">
+          <h1 className="text-2xl font-semibold text-stone-50">Spine</h1>
+          <p className="mt-1 text-sm text-stone-400">
             Create an account to start your shelf.
           </p>
         </div>
 
         <form
           onSubmit={handleSubmit}
-          className="bg-white border border-stone-200 rounded-xl p-6 shadow-sm space-y-4"
+          className="bg-stone-900 border border-stone-800 rounded-xl p-6 shadow-sm space-y-4"
         >
           {error && (
-            <div className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-md px-3 py-2">
+            <div className="text-sm text-red-400 bg-red-950 border border-red-900 rounded-md px-3 py-2">
               {error}
             </div>
           )}
 
           <div>
-            <label className="block text-sm font-medium text-stone-700 mb-1">
+            <label className="block text-sm font-medium text-stone-300 mb-1">
               Name
             </label>
             <input
@@ -69,13 +69,13 @@ export default function SignupPage() {
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full rounded-md border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-stone-800"
+              className="w-full rounded-md border border-stone-700 bg-stone-950 text-stone-50 placeholder-stone-500 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-stone-500"
               placeholder="Jane Doe"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-stone-700 mb-1">
+            <label className="block text-sm font-medium text-stone-300 mb-1">
               Email
             </label>
             <input
@@ -83,13 +83,13 @@ export default function SignupPage() {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full rounded-md border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-stone-800"
+              className="w-full rounded-md border border-stone-700 bg-stone-950 text-stone-50 placeholder-stone-500 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-stone-500"
               placeholder="jane@example.com"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-stone-700 mb-1">
+            <label className="block text-sm font-medium text-stone-300 mb-1">
               Password
             </label>
             <input
@@ -98,7 +98,7 @@ export default function SignupPage() {
               minLength={6}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full rounded-md border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-stone-800"
+              className="w-full rounded-md border border-stone-700 bg-stone-950 text-stone-50 placeholder-stone-500 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-stone-500"
               placeholder="At least 6 characters"
             />
           </div>
@@ -106,15 +106,15 @@ export default function SignupPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-stone-900 text-white rounded-md py-2 text-sm font-medium hover:bg-stone-800 transition disabled:opacity-50"
+            className="w-full bg-stone-50 text-stone-950 rounded-md py-2 text-sm font-medium hover:bg-stone-200 transition disabled:opacity-50"
           >
             {loading ? "Creating account..." : "Sign up"}
           </button>
         </form>
 
-        <p className="mt-4 text-center text-sm text-stone-500">
+        <p className="mt-4 text-center text-sm text-stone-400">
           Already have an account?{" "}
-          <Link href="/login" className="text-stone-900 font-medium hover:underline">
+          <Link href="/login" className="text-stone-50 font-medium hover:underline">
             Log in
           </Link>
         </p>
