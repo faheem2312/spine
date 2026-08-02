@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,7 +27,23 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
+      <head>
+        <Script id="theme-loader" strategy="beforeInteractive">
+          {`
+            try {
+              if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+                document.documentElement.classList.add('light')
+                document.documentElement.setAttribute('data-theme', 'light')
+              } else {
+                document.documentElement.classList.remove('light')
+                document.documentElement.setAttribute('data-theme', 'dark')
+              }
+            } catch (_) {}
+          `}
+        </Script>
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

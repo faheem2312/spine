@@ -1,20 +1,62 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0c0a09;
-  --foreground: #f5f5f4;
   color-scheme: dark;
+  --background: #080d09; /* Deep dark forest background */
+  --foreground: #ecf3ee; /* Soft minty white */
+
+  /* Dark mode stone values - green-themed */
+  --stone-50: #10b981;    /* Accent Green (primary buttons, logo, headings, links) */
+  --stone-100: #34d399;   /* Lighter Accent Green */
+  --stone-200: #059669;   /* Primary button hover bg in dark mode */
+  --stone-300: #a5c0ad;   /* Secondary light green text */
+  --stone-400: #829a8a;   /* Muted gray-green text */
+  --stone-500: #496351;   /* Placeholders / Muted labels */
+  --stone-700: #203527;   /* Dividers */
+  --stone-800: #14241a;   /* Borders */
+  --stone-900: #0c160f;   /* Card bg */
+  --stone-950: #060a07;   /* Body bg */
 }
 
-@theme inline {
+.light {
+  color-scheme: light;
+  --background: #f2f7f3;  /* Soft light mint background */
+  --foreground: #091a0f;  /* Deep forest green text */
+
+  /* Light mode stone values - green-themed */
+  --stone-50: #086e45;    /* Deep Forest Green (headings, buttons, links) */
+  --stone-100: #044b2f;   /* Darker Forest Green */
+  --stone-200: #044b2f;   /* Button hover */
+  --stone-300: #1c3625;   /* Secondary dark text */
+  --stone-400: #44614e;   /* Muted dark text */
+  --stone-500: #7d9685;   /* Placeholders / Muted labels */
+  --stone-700: #c2d4c7;   /* Dividers */
+  --stone-800: #dae5dd;   /* Borders */
+  --stone-900: #ffffff;   /* Card bg */
+  --stone-950: #f2f7f3;   /* Body bg */
+}
+
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-stone-50: var(--stone-50);
+  --color-stone-100: var(--stone-100);
+  --color-stone-200: var(--stone-200);
+  --color-stone-300: var(--stone-300);
+  --color-stone-400: var(--stone-400);
+  --color-stone-500: var(--stone-500);
+  --color-stone-700: var(--stone-700);
+  --color-stone-800: var(--stone-800);
+  --color-stone-900: var(--stone-900);
+  --color-stone-950: var(--stone-950);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
