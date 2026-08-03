@@ -41,9 +41,9 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row bg-[#202020]">
+    <div className="min-h-screen md:h-screen md:overflow-hidden flex flex-col md:flex-row bg-[#202020]">
       {/* Left Column - Login Form (65% width on desktop) */}
-      <div className="relative flex-1 flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 py-16 bg-[#202020]">
+      <div className="relative flex-1 flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 py-12 md:py-16 bg-[#202020] overflow-y-auto">
         {/* Spine Logo - Always at the top left corner */}
         <div className="absolute top-6 left-6 md:top-8 md:left-8 z-20">
           <SpineLogo textClassName="text-xl font-bold tracking-tight text-white" iconClassName="h-5 w-5" />

@@ -2,25 +2,25 @@
 
 :root {
   color-scheme: dark;
-  --background: #202020; /* Matches hanging_bulb_book.jpg background exactly */
+  --background: #0c0a09; /* Warm dark chocolate-charcoal */
   --foreground: #ffffff; /* Pure white */
 
-  /* Dark mode - Peach/Apricot theme (with pure white text) */
+  /* Dark mode - Warm Peach/Apricot theme (with pure white text) */
   --stone-50: #e8b28b;    /* Accent Peach */
   --stone-100: #f0caaf;   /* Lighter Accent Peach */
   --stone-200: #d4966a;   /* Primary button hover */
   --stone-300: #ffffff;   /* Pure white text */
   --stone-400: #ffffff;   /* Pure white text */
   --stone-500: #ffffff;   /* Pure white text */
-  --stone-700: #333333;   /* Dividers */
-  --stone-800: #2a2a2a;   /* Borders */
-  --stone-900: #181818;   /* Card bg */
-  --stone-950: #202020;   /* Body bg */
+  --stone-700: #332a24;   /* Warm dark dividers */
+  --stone-800: #251e1a;   /* Warm dark borders */
+  --stone-900: #14110f;   /* Warm dark card bg */
+  --stone-950: #0c0a09;   /* Warm dark body bg */
 }
 
 .light {
   color-scheme: light;
-  --background: #ffffff;  /* Pure white background */
+  --background: #fbfaf7;  /* Cozy warm cream background */
   --foreground: #000000;  /* Pure black text */
 
   /* Light mode - Terracotta/Peach theme (with pure black text) */
@@ -30,10 +30,10 @@
   --stone-300: #000000;   /* Pure black text */
   --stone-400: #000000;   /* Pure black text */
   --stone-500: #000000;   /* Pure black text */
-  --stone-700: #e5e5e5;   /* Dividers */
-  --stone-800: #d4d4d4;   /* Borders */
+  --stone-700: #ede7e0;   /* Light warm dividers */
+  --stone-800: #e2dbd3;   /* Light warm borders */
   --stone-900: #ffffff;   /* Card bg */
-  --stone-950: #ffffff;   /* Body bg */
+  --stone-950: #fbfaf7;   /* Body bg */
 }
 
 @theme {
