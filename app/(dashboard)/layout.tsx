@@ -5,6 +5,7 @@ import { User } from "@/models/User";
 import { getCurrentUserId } from "@/lib/session";
 import LogoutButton from "@/components/LogoutButton";
 import ThemeToggle from "@/components/ThemeToggle";
+import SpineLogo from "@/components/SpineLogo";
 
 export default async function DashboardLayout({
   children,
@@ -28,8 +29,8 @@ export default async function DashboardLayout({
     <div className="min-h-screen bg-stone-950">
       <header className="border-b border-stone-800 bg-stone-900">
         <div className="relative max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/dashboard" className="text-lg font-semibold text-stone-50">
-            Spine
+          <Link href="/dashboard" className="flex items-center hover:opacity-90 transition-opacity">
+            <SpineLogo iconClassName="h-4.5 w-4.5" textClassName="text-base font-semibold text-stone-50" />
           </Link>
           <nav className="absolute left-1/2 -translate-x-1/2 flex items-center gap-6 text-sm">
             <Link href="/dashboard" className="text-stone-400 hover:text-stone-50">

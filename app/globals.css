@@ -2,38 +2,38 @@
 
 :root {
   color-scheme: dark;
-  --background: #080d09; /* Deep dark forest background */
-  --foreground: #ecf3ee; /* Soft minty white */
+  --background: #202020; /* Matches hanging_bulb_book.jpg background exactly */
+  --foreground: #ffffff; /* Pure white */
 
-  /* Dark mode stone values - green-themed */
-  --stone-50: #10b981;    /* Accent Green (primary buttons, logo, headings, links) */
-  --stone-100: #34d399;   /* Lighter Accent Green */
-  --stone-200: #059669;   /* Primary button hover bg in dark mode */
-  --stone-300: #a5c0ad;   /* Secondary light green text */
-  --stone-400: #829a8a;   /* Muted gray-green text */
-  --stone-500: #496351;   /* Placeholders / Muted labels */
-  --stone-700: #203527;   /* Dividers */
-  --stone-800: #14241a;   /* Borders */
-  --stone-900: #0c160f;   /* Card bg */
-  --stone-950: #060a07;   /* Body bg */
+  /* Dark mode - Peach/Apricot theme (with pure white text) */
+  --stone-50: #e8b28b;    /* Accent Peach */
+  --stone-100: #f0caaf;   /* Lighter Accent Peach */
+  --stone-200: #d4966a;   /* Primary button hover */
+  --stone-300: #ffffff;   /* Pure white text */
+  --stone-400: #ffffff;   /* Pure white text */
+  --stone-500: #ffffff;   /* Pure white text */
+  --stone-700: #333333;   /* Dividers */
+  --stone-800: #2a2a2a;   /* Borders */
+  --stone-900: #181818;   /* Card bg */
+  --stone-950: #202020;   /* Body bg */
 }
 
 .light {
   color-scheme: light;
-  --background: #f2f7f3;  /* Soft light mint background */
-  --foreground: #091a0f;  /* Deep forest green text */
+  --background: #ffffff;  /* Pure white background */
+  --foreground: #000000;  /* Pure black text */
 
-  /* Light mode stone values - green-themed */
-  --stone-50: #086e45;    /* Deep Forest Green (headings, buttons, links) */
-  --stone-100: #044b2f;   /* Darker Forest Green */
-  --stone-200: #044b2f;   /* Button hover */
-  --stone-300: #1c3625;   /* Secondary dark text */
-  --stone-400: #44614e;   /* Muted dark text */
-  --stone-500: #7d9685;   /* Placeholders / Muted labels */
-  --stone-700: #c2d4c7;   /* Dividers */
-  --stone-800: #dae5dd;   /* Borders */
+  /* Light mode - Terracotta/Peach theme (with pure black text) */
+  --stone-50: #b25d2b;    /* Terracotta Accent */
+  --stone-100: #984b1d;   /* Darker Accent */
+  --stone-200: #833e14;   /* Button hover */
+  --stone-300: #000000;   /* Pure black text */
+  --stone-400: #000000;   /* Pure black text */
+  --stone-500: #000000;   /* Pure black text */
+  --stone-700: #e5e5e5;   /* Dividers */
+  --stone-800: #d4d4d4;   /* Borders */
   --stone-900: #ffffff;   /* Card bg */
-  --stone-950: #f2f7f3;   /* Body bg */
+  --stone-950: #ffffff;   /* Body bg */
 }
 
 @theme {
