@@ -60,7 +60,7 @@ export default function LoginPage() {
 
           <form
             onSubmit={handleSubmit}
-            className="bg-[#181818]/60 backdrop-blur-sm border border-stone-800/80 rounded-2xl p-6 md:p-8 shadow-xl space-y-4"
+            className="bg-[#181818]/60 backdrop-blur-sm border border-neutral-800/80 rounded-2xl p-6 md:p-8 shadow-xl space-y-4"
           >
             {error && (
               <div className="text-sm text-red-400 bg-red-950/80 border border-red-900/60 rounded-lg px-3.5 py-2.5">
@@ -77,7 +77,7 @@ export default function LoginPage() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded-lg border border-stone-800 bg-[#202020]/50 text-white placeholder-white/35 px-3.5 py-2.5 text-sm transition-all focus:outline-none focus:border-stone-600 focus:ring-1 focus:ring-stone-600"
+                className="w-full rounded-lg border border-neutral-800 bg-[#202020]/50 text-white placeholder-white/35 px-3.5 py-2.5 text-sm transition-all focus:outline-none focus:border-[#e8b28b] focus:ring-1 focus:ring-[#e8b28b]"
                 placeholder="jane@example.com"
               />
             </div>
@@ -91,7 +91,7 @@ export default function LoginPage() {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full rounded-lg border border-stone-800 bg-[#202020]/50 text-white placeholder-white/35 px-3.5 py-2.5 text-sm transition-all focus:outline-none focus:border-stone-600 focus:ring-1 focus:ring-stone-600"
+                className="w-full rounded-lg border border-neutral-800 bg-[#202020]/50 text-white placeholder-white/35 px-3.5 py-2.5 text-sm transition-all focus:outline-none focus:border-[#e8b28b] focus:ring-1 focus:ring-[#e8b28b]"
                 placeholder="••••••••"
               />
             </div>
@@ -99,7 +99,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-stone-50 text-black rounded-lg py-2.5 text-sm font-semibold hover:bg-stone-200 active:scale-[0.98] transition-all duration-150 disabled:opacity-50 shadow-sm mt-2"
+              className="w-full bg-[#e8b28b] hover:bg-[#d4966a] text-[#0e0c0a] font-semibold rounded-lg py-2.5 text-sm active:scale-[0.98] transition-all duration-150 disabled:opacity-50 shadow-sm mt-2 border-0 outline-none"
             >
               {loading ? "Logging in..." : "Log in"}
             </button>
@@ -107,7 +107,7 @@ export default function LoginPage() {
 
           <p className="mt-6 text-center text-sm text-white/70">
             Don&apos;t have an account?{" "}
-            <Link href="/signup" className="text-white font-medium hover:underline transition-all">
+            <Link href="/signup" className="text-[#e8b28b] font-medium hover:underline transition-all">
               Sign up
             </Link>
           </p>
